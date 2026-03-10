@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio - Mohammad Yusuf Hisyam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ICON -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at right, #0ff 0%, #021926 45%);
+      background-color: #021926;
+      color: #fff;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+    }
+
+    header h2 {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f7ff;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .hero-text h1 span {
+      color: #00f7ff;
+    }
+
+    .hero-text h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    .hero-text p {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    /* ===== SOCIAL ===== */
+    .social {
+      margin-bottom: 25px;
+    }
+
+    .social a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #00f7ff;
+      color: #00f7ff;
+      margin-right: 10px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      background: #00f7ff;
+      color: #021926;
+      box-shadow: 0 0 15px #00f7ff;
+    }
+
+    /* ===== BUTTON ===== */
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: #00f7ff;
+      color: #021926;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 0 20px #00f7ff;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 40px #00f7ff;
+    }
+
+    /* ===== PROFILE IMAGE ===== */
+    .hero-img {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-img::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow:
+        0 0 25px #00f7ff,
+        0 0 60px #00f7ff,
+        0 0 120px #00f7ff;
+      animation: pulse 3s infinite;
+    }
+
+    .hero-img img {
+      width: 85%;
+      height: 85%;
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 1;
+      background: #000;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 20px #00f7ff;
+      }
+
+      50% {
+        box-shadow: 0 0 80px #00f7ff;
+      }
+
+      100% {
+        box-shadow: 0 0 20px #00f7ff;
+      }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-img {
+        margin-bottom: 40px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    .footer-copyright {
+      text-align: center;
+      font-size: 0.8em;
+      color: #ccc;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <h2>My Portfolio</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about me.html">About</a>
+      <a href="portofolio.html">Skills</a>
+      <a href="my portofolio.html">Portofolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h4>Hello, It's Me</h4>
+      <h1> Mohammad Yusuf <span>Hisyam</span></h1>
+      <h3>And I am a Web Develloper</h3>
+      <p>I am a computer science student</p>
+
+      <div class="social">
+        <a href="https://instagram.com/yusuf_hisyam06" target="_blank">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://wa.me/6285382460264" target="_blank">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+        <a href="https://tiktok.com/@suf" target="_blank">
+          <i class="bx bxl-tiktok"></i>
+        </a>
+        <a href="https://linkedin.com/in/hisyam-yusuf-1a68383b4" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+      <a href="about me.html" class="btn">More About Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="1728121874852.jpg" alt="Profil" />
+    </div>
+  </section>
+  <footer class="footer-copyright">
+    &copy; Mohammad Hisyam Yusuf-Website
+  </footer>
+</body>
+</html>

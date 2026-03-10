@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #021926;
+        color: #fff;
+      }
+
+      /* ===== SERVICES SECTION ===== */
+      .services {
+        min-height: 100vh;
+        padding: 80px 8%;
+        text-align: center;
+      }
+
+      .services h2 {
+        font-size: 42px;
+        margin-bottom: 60px;
+      }
+
+      .services h2 span {
+        color: #00f7ff;
+      }
+
+      /* ===== CARD CONTAINER ===== */
+      .services-container {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* ===== CARD ===== */
+      .service-card {
+        background: #031f2f;
+        padding: 40px 30px;
+        border-radius: 20px;
+        width: 300px;
+        box-shadow: 0 0 25px rgba(0, 247, 255, 0.4);
+        transition: 0.4s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 0 40px #00f7ff;
+      }
+
+      /* ===== ICON ===== */
+      .service-card i {
+        font-size: 50px;
+        color: #00f7ff;
+        margin-bottom: 25px;
+      }
+
+      /* ===== TEXT ===== */
+      .service-card h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      .service-card p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #cfcfcf;
+        margin-bottom: 25px;
+      }
+
+      /* ===== BUTTON ===== */
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background: #00f7ff;
+        color: #021926;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 0 20px #00f7ff;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        box-shadow: 0 0 40px #00f7ff;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .services h2 {
+          font-size: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="services">
+      <h2>My <span>Services</span></h2>
+
+      <div class="services-container">
+        <!-- CARD 1 -->
+        <div class="service-card">
+          <i class="bx bx-code-alt"></i>
+          <h3>Frontend Development</h3>
+          <p>
+            Building responsive and modern websites using HTML, CSS, JavaScript,
+            and React with clean and efficient code.
+          </p>
+          <a href="https://wa.me/6285382460264" class="btn">Contact Me</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="service-card">
+          <i class="bx bx-palette"></i>
+          <h3>UI / UX Design</h3>
+          <p>
+            Designing user interfaces with a focus on usability, clean layout,
+            and visually appealing experiences.
+          </p>
+          <a href="https://wa.me/6285382460264" class="btn">Contact Me</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="service-card">
+          <i class="bx bx-network-chart"></i>
+          <h3>Network Technician</h3>
+          <p>
+            Experienced in network installation, maintenance, and
+            troubleshooting to ensure reliable systems.
+          </p>
+          <a href="https://wa.me/6285382460264" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

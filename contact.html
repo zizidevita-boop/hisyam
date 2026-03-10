@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #021926;
+      color: #fff;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 8%;
+    }
+
+    .contact-container {
+      display: flex;
+      gap: 80px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    /* ===== LEFT TEXT ===== */
+    .contact-text h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .contact-text h2 span {
+      color: #00f7ff;
+    }
+
+    .contact-text p {
+      font-size: 14px;
+      color: #cfcfcf;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    .contact-text .info {
+      margin-top: 25px;
+    }
+
+    .contact-text .info p {
+      margin-bottom: 10px;
+    }
+
+    /* ===== FORM ===== */
+    .contact-form {
+      flex: 1;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      background: #0b2b3a;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 160px;
+    }
+
+    /* ===== BUTTON ===== */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #00f7ff;
+      color: #021926;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 0 20px #00f7ff;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 40px #00f7ff;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .contact-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .footer-copyright {
+        text-align: center;
+        font-size: 0.8em;
+        color: #ccc;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+  </style>
+</head>
+
+<body>
+  <section class="contact">
+    <div class="contact-container">
+      <!-- LEFT -->
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <p>
+          Let’s work together. If you have any project or need help with your
+          website, feel free to contact me anytime.
+        </p>
+
+        <div class="info">
+          <p>📧 Email : hisyamyusuf885@gmail.com</p>
+          <p>📞 Phone : +62 853 8246 0264</p>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <form class="contact-form">
+        <input type="text" placeholder="Enter Your Name" />
+        <input type="email" placeholder="Enter Your Email" />
+        <input type="text" placeholder="Enter Your Subject" />
+        <textarea placeholder="Enter Your Message"></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+  </section>
+  <footer class="footer-copyright">
+    &copy; Mohammad Hisyam Yusuf-Website
+  </footer>
+</body>
+</html>
